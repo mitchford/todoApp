@@ -1,0 +1,4 @@
+.complete-button, .delete-button {
+  cursor: pointer;
+  margin: 20px 10px;
+}

@@ -1,0 +1,11 @@
+<div class="list-group-item clearfix" *ngFor="let todo of todoList" (dblclick)="onEditItem(todo.id)">
+  <div class="pull-left">
+    <h4 class="list-group-item-heading">{{ todo.title }} </h4>
+    <p>{{ todo.description }}</p>
+  </div>
+  <div class="pull-right">
+    <span class="complete-button glyphicon glyphicon-ok" (click)="onCompleted(todo.id)" *ngIf="todo.status !== 'completed'"></span>
+    <span class="delete-button glyphicon glyphicon-remove" (click)="onDelete(todo.id)" ></span>
+  </div>
+</div>
+
