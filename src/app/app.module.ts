@@ -14,6 +14,7 @@ import {FormsModule} from '@angular/forms';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import { EditModalComponent } from './modal/edit-modal/edit-modal.component';
 import {MatDialog, MatDialogModule} from '@angular/material/dialog';
+import {DragDropModule} from '@angular/cdk/drag-drop';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import {MatDialog, MatDialogModule} from '@angular/material/dialog';
     MatTabsModule,
     MatDialogModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    DragDropModule
   ],
   providers: [HttpClient],
   bootstrap: [AppComponent]
